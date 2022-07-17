@@ -18,3 +18,102 @@
     object-fit: cover;
     z-index: -1;
 }
+
+
+.header {
+
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+
+}
+
+.div1 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+.title {
+    color: #e1e1e1;
+    padding-left: 5%;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 12px greenyellow;
+    font-size: clamp(10px, 3.5vw, 16px);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.div2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: clamp(25px, 18vw, 60px);
+    height: clamp(30px, 8vh, 70px);
+
+}
+
+
+.burger {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #032623;
+}
+
+.burger:hover {
+    background-color: red;
+}
+
+.menue {
+    width: clamp(12px, 65%, 40px);
+    height: clamp(3px, 8%, 7px);
+    margin: 5%;
+    background-color: white;
+}
+
+
+
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 90vh;
+    position: fixed;
+    bottom: 0;
+    left: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav a {
+    font-size: clamp(20px, 5vw, 28px);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-family: DejaVu Sans Mono, monospace;
+    margin: 10%;
+    padding: 1%;
+    /* background-color: rgb(11, 43, 68, 0.4); */
+    width: 40%;
+    text-align: center;
+    text-shadow: 2px 2px 12px rgb(201, 21, 15);
+}
+
+
+
+
+
+.active {
+    transform: translate(-100%);
+    transition: 0.3s ease-in;
+
+}
