@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.header {
+    background-color: aliceblue;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+
+}
+
+.div1 {
+    background-color: aqua;
+    flex-grow: 2;
+
+
+
+}
+
+.div2 {
+    background-color: pink;
+    flex-grow: 1;
+
+
+}
+
+.nav {
+    background-color: yellow;
+    width: 100vw;
+    height: 90vh;
+    position: fixed;
+    bottom: 0;
+    left: 100vw;
+    z-index: 10;
+}
+
+
+
+
+
+
+.active {
+    transform: translate(-100%);
+    transition: 0.3s ease-in;
+
+}
